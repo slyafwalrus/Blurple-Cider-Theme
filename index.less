@@ -1,0 +1,45 @@
+div#app {
+	--color1: #23272a;
+	--color2: #2c2f33;
+	--bgColor: transparent;
+	--bgWidth: 0px;
+	--bgHeight: 0px;
+	--chromeHeight: 50px;
+	--keyColor: #7289da;
+	width: 100%;
+	height: 100%;
+	background: var(--color1);
+	color: #ffffff;
+	user-select: none;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	background-size: 400% 400%;
+
+	&.simplebg {
+		background: #17288d;
+
+		.app-chrome {
+			z-index: 1;
+		}
+	}
+}
+
+/* Hides Videos and Podcasts from side bar.
+.app-sidebar-item{
+    &:nth-child(12), &:nth-child(13){
+        display:none;
+    }
+}
+*/
+
+.app-chrome .app-chrome-item > .app-mainmenu {
+	background-image: url("cider_logo.svg");
+	background-repeat: no-repeat;
+
+    &.active {
+		background-image: url("cider_logo.svg");
+		background-repeat: no-repeat;
+    }
+
+}
